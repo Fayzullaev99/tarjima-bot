@@ -1,5 +1,5 @@
 from psycopg2 import connect
-from config import DATABASE, PASSWORD, USER, HOST
+from config import DATABASE, PASSWORD, USER, HOST, PORT
 
 class DataBase:
     def __init__(self):
@@ -7,7 +7,8 @@ class DataBase:
             database=DATABASE,
             password=PASSWORD,
             user=USER,
-            host=HOST
+            host=HOST,
+            port=PORT
         )
 
     def menejer(self,sql,*args,fetchone=False,fetchall=False,commit=False):
