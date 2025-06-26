@@ -1,0 +1,5 @@
+TOKEN = "7673141791:AAEOdGLPm63w17MVep6Ognm3SuWmwdIChBA"
+DATABASE = "translate_bot"
+PASSWORD = "postgres"
+USER = "postgres"
+HOST = "localhost"
