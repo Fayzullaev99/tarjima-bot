@@ -13,9 +13,9 @@ def history_or_translate(call:CallbackQuery):
     else:
         result = db.select_table(chat_id)
         if len(result) > 0:
-            text = "Lug'at\n"
+            text = "Lug'at"
             for word, translated_word in result:
-                text += f"{word} - {translated_word}\n"
+                text += f"\n{word} - {translated_word}"
         else:
             text = "Lug'atingiz bo'sh!"
         bot.send_message(chat_id, text, reply_markup=dict_or_translate())
